@@ -1,35 +1,14 @@
-.workshop-header-images{
-   display: flex
-}
-.workshop-header-images-small{
-    display: flex;
-    flex-direction: column;
+.workshop-header-image{
     height:25rem;
-    margin-right: 1px;
-    width: 30%;
 }
-.workshop-header-images-big{
-    height:25rem;
-    width: 70%;
-}
-.workshop-header-images-big img{
-    width:100%;
-    height:100%;
-    object-fit: fill;
-    border-radius: 0 8px 8px 0;
-}
-.workshop-header-images-small img{
-    width:100%;
-    height:50%;
-    object-fit:fill;
-}
-/*2version*/
-.workshop-header-images-version1{
-    height:25rem
-}
-.workshop-header-images-version1 img{
+.workshop-header-image img{
     width:100%;
     height:100%;
     object-fit:fill;
     border-radius: 8px;
+}
+@media (max-width:600px){
+    .workshop-header-image{
+        height:15rem
+    }
 }

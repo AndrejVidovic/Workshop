@@ -16,7 +16,7 @@ const Navbar=()=>{
         setInfoVisible(!infoVisible)
     }
     const LogOut=()=>{
-        dispatch(user_logged_out(login));
+        dispatch(user_logged_out());
     }
     return(
         <header className='navbar-header'>

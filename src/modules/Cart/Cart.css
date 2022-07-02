@@ -68,8 +68,8 @@
         display: none;
     }
     .shopping-cart-details{
-        width: 96vw;
-        padding: 0 2vw;
+        width: 94vw;
+        padding: 0 3vw
     }
 }
 @media (min-width:768px) and (max-width:992px){

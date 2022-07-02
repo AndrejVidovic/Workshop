@@ -18,14 +18,13 @@
 .workshop-time{
     display: flex;
     align-items: flex-start;
-}
-.workshop-time p{
-    margin-top: 0;
+    flex-wrap: wrap;
 }
 .workshop-icon{
     margin-right: 0.4rem;
 }
 .workshop-date-time{
+    margin-top: 0;
     margin-right: 2rem;
     font-size: 17px;
 }

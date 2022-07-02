@@ -60,7 +60,7 @@ const Cart=({workshop})=>{
         <div className="cart-container">
             <h4>Studentska Karta</h4>
             <div className='cart-price'>
-                <FontAwesomeIcon icon={faTag} size='2x' className="tag-icon"/>
+                <FontAwesomeIcon icon={faTag} size='2x' style={{color:"#0097CC"}}/>
                 <h3>{workshop.price},00 </h3>
                 <h5>€/karta</h5>
             </div>

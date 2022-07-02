@@ -1,6 +1,5 @@
 .cart-container{
     height: 340px;
-    background: #FFFFFF;
     box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);
     border-radius: 8px;
     width: 380px;
@@ -28,9 +27,6 @@
     font-size: 20px;
     margin: 0;
 }
-.tag-icon{
-    color: #0097CC;
-}
 .cart-quantity{
     display: flex;
     justify-content: center;
@@ -44,7 +40,6 @@
     width: 55px;
     font-size: 22px;
     text-align: center;
-    font-weight: 500
 }
 .cart-quantity button{
     background: #FFC80C;
@@ -64,7 +59,6 @@
 }
 @media (max-width:992px){
     .cart-container{
-
         margin-right: auto;
         margin-left: auto
     }

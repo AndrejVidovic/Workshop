@@ -52,7 +52,7 @@ const Workshop=()=>{
                         <BackButton/>
                     </div>
                     <div className="workshop-body">
-                            <WorkshopImages image={workshop.imageUrl}id={workshop.id}/>
+                            <WorkshopImages image={workshop.imageUrl}/>
                         <div className='workshop-info-container'>
                             <WorkshopInfo workshop={workshop}/>
                             <Cart workshop={workshop}/>

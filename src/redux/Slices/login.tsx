@@ -13,7 +13,7 @@ const loginSlice = createSlice({
             state.username=action.payload
         },
         user_logged_out(state){
-            localStorage.setItem('user', null);
+            localStorage.setItem('user', "");
             state.username=""
         }
     },  

@@ -15,9 +15,10 @@ function App() {
   const userFeature = (login!="");
 
   // mocked persistant login on refresh by localstorage
-  const usernameFromStorage = localStorage.getItem('user'); 
+  const usernameFromStorage = localStorage.getItem('user');
   useEffect(()=>{
-    dispatch(user_logged_in(usernameFromStorage))
+    if(usernameFromStorage!==null)
+      dispatch(user_logged_in(usernameFromStorage))
   },[usernameFromStorage])
 
   return (
