@@ -1,0 +1,70 @@
+.card-container-small{
+    width: 90%;
+    height: auto;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    margin: 1.5rem auto;
+    min-height: 220px;
+    box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);  
+}
+.card-header-small{
+    height: auto;
+    width: 40%;
+}
+.workshop-image-small{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+.card-body-small{
+    width: 55%;
+    position: relative;
+    margin: 1rem 0.4rem 0 0.4rem;
+}
+.card-workshop-time-small{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+.card-workshop-title-small{
+    color: #0097CC;
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+    height: 3.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-workshop-price-small{
+    font-size: 22px;
+}
+.card-icon-small{
+    margin-right: 0.2rem;
+}
+.card-workshop-icon-div-small{
+    position: absolute;
+    top: -29px;
+    left: -29px;
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: #0097CC;
+    border-radius: 8px;
+}
+.card-cart-small{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    background: #FFC80C;
+    border-radius: 8px;
+    margin-left: 0.5rem;
+}
+.card-workshop-price-container{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.8rem;
+    margin-top: auto;
+}

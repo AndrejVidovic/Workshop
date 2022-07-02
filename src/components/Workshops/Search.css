@@ -1,0 +1,34 @@
+.search-field input{
+    border: hidden;
+    outline: none;
+    padding: 0.9rem
+} 
+.search-field span{
+    padding-left: 1.2rem;
+}
+.search-field{
+    width: 20rem;
+    border-radius: 8px;
+    border: 1px solid #7F7F7F;
+    align-items: center;
+    margin-right: 3rem;
+    margin-left: auto;
+}
+@media (max-width:992px){
+    .search-field{
+        width: 17rem;
+        margin-right: 2rem;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .search-field{
+        width: 20rem;
+    }
+}
+@media (max-width:768px){
+    .search-field{
+        margin-right:0;
+        margin-left: 0;
+        width: 17rem;
+    }
+}

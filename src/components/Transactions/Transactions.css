@@ -1,0 +1,49 @@
+.table{
+    width: 100%;
+}
+tr:nth-child(even) {background: #F2F2F2;}
+tr{
+    height: 4rem;
+    border-radius: 8px;
+    text-align: center;
+}
+th{
+    color:#7F7F7F
+}
+.details-button{
+    background: #FFC80C;
+    box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);
+    border-radius: 8px;
+    border: 0;
+    width: 90px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 15px;
+}
+@media (max-width:600px){
+    .table-header{
+        display: none;
+    }
+    .transaction-id{
+        display: none;
+    }
+    .transaction-time{
+        display: none;
+    }
+    .transaction-button{
+        display: none;
+    }
+    .transaction-total{
+        font-size: 20px;
+    }
+    .transaction-icon{
+        padding: 0 1rem;
+    }
+}
+@media (min-width:601px){
+    .transaction-icon{
+        display: none;
+    }
+}
+
+
