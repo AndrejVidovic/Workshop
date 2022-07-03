@@ -46,8 +46,9 @@
 }
 .card-workshop-icon-div-small{
     position: absolute;
-    top: -29px;
-    left: -29px;
+    transform: translate(-5%, +30%);
+   /* top: -29px;
+    left: -29px;*/
     padding: 0.5rem;
     width: fit-content;
     height: fit-content;

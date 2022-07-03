@@ -3,7 +3,7 @@ const WorkshopImages=({image})=>{
 
     return(
         <div className="workshop-header-image">
-            <img src={image}></img>
+            <img src={image} alt="workshop image"></img>
         </div>
 
     )

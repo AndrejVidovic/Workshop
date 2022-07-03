@@ -22,7 +22,7 @@ const Navbar=()=>{
         <header className='navbar-header'>
             <nav className='navbar'>
                 <div className='workshop-logo'>
-                    <a href='/'><img src={logo}></img></a>
+                    <a href='/'><img src={logo} alt="logo"></img></a>
                 </div>
                 <div className={`user-info ${infoVisible?'active':null}`} onClick={HandleChangeVisible}>
                     <FontAwesomeIcon icon={faUser} size='lg' style={{zIndex:2}}/>
