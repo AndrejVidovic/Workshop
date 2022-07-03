@@ -46,7 +46,7 @@ const Workshop=()=>{
         <>
         {
             workshop.id==null?<ThreeDots color="#0097CC" height={80} width={80} wrapperStyle={{marginTop:"120px",justifyContent:"center"}} />:  
-            <div>
+            <>
                 <div className="workshop-container">
                     <div className="back-button">
                         <BackButton/>
@@ -65,7 +65,7 @@ const Workshop=()=>{
                         {recomended.map((item,index)=><WorkshopCard workshop={item} key={item.id}/>)}
                     </div>
                 </div> 
-            </div>
+            </>
         }
         </>
     )

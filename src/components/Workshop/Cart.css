@@ -17,7 +17,8 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin: auto
+    margin: auto;
+    flex-wrap: wrap;
 }
 .cart-price h3{
     font-size: 40.5px;
@@ -61,6 +62,11 @@
     .cart-container{
         margin-right: auto;
         margin-left: auto
+    }
+}
+@media (max-width:600px){
+    .cart-container{
+        width: 90%;
     }
 }
 
