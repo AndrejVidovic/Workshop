@@ -15,7 +15,7 @@ const CategoryFilter=({itemsToFilter, setFiltersWorkshops})=>{
 
     useEffect(() => {
         const getData = async () => {
-            const res = await fetch(`http://localhost:3000/categories`,fetchOptions);
+            const res = await fetch(`https://locastic-server.herokuapp.com/categories`,fetchOptions);
             const data = await res.json();
             setCategories(data);
         }

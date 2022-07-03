@@ -58,7 +58,7 @@ const CheckoutForm=({setOpenCheckout})=>{
         event.preventDefault();
         if(Validation(user,setErrors,InitalValuesErrors)&&active){
             event.preventDefault();
-            fetch("http://localhost:3000/orders", {
+            fetch("https://locastic-server.herokuapp.com/orders", {
                 method: "POST",
                 body:JSON.stringify(object),
                 headers: {

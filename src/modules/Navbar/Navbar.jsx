@@ -1,7 +1,7 @@
 import './Navbar.css'
 import logo from '../../Images/Logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { useAppSelector, useAppDispatch } from '../../redux/hooks'
 import { useState } from 'react'
 import {user_logged_out} from '../../redux/Slices/login'

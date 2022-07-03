@@ -14,7 +14,7 @@ const WorkshopInfo=({workshop})=>{
     const [moderator,setModerator]=useState("")
     useEffect(()=>{
         const getData = async () => {
-            const res = await fetch(`http://localhost:3000/users/${workshop.userId}`,fetchOptions);      
+            const res = await fetch(`https://locastic-server.herokuapp.com/users/${workshop.userId}`,fetchOptions);      
             const data = await res.json();
             setModerator(data.name);  
         }

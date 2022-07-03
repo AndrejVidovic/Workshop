@@ -51,7 +51,7 @@ const LoginForm=()=>{
     }
     const CheckLogin= async(e)=>{
         e.preventDefault();
-        const res = await fetch(`http://localhost:3000/users/?email=${user.email}&password=${user.password}`,fetchOptions);      
+        const res = await fetch(`https://locastic-server.herokuapp.com/users/?email=${user.email}&password=${user.password}`,fetchOptions);      
         const data = await res.json();
         const loggedUser=data[0];
         if(data.length!=1){

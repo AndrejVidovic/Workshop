@@ -28,7 +28,7 @@ const Workshop=()=>{
     const [recomended,setRecomended]=useState([])
     useEffect(()=>{
         const getData = async () => {
-            const res = await fetch(`http://localhost:3000/workshops/${workshopId.id}`,fetchOptions);
+            const res = await fetch(`https://locastic-server.herokuapp.com/workshops/${workshopId.id}`,fetchOptions);
             const data = await res.json();
             setWorkshop(data);          
         }
@@ -36,7 +36,7 @@ const Workshop=()=>{
     },[workshopId]);
     useEffect(()=>{
         const getRecomended = async () => {
-            const res = await fetch(`http://localhost:3000/workshops?&_limit=3&_sort=date&_order=desc&title_ne=${workshop.title}&category=${workshop.category}`,fetchOptions);
+            const res = await fetch(`https://locastic-server.herokuapp.com/workshops?&_limit=3&_sort=date&_order=desc&title_ne=${workshop.title}&category=${workshop.category}`,fetchOptions);
             const data = await res.json();
             setRecomended(data);
         }
