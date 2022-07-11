@@ -24,7 +24,7 @@ const CartCard=({card,editCartCard, deleteCartCard})=>{
                     <FontAwesomeIcon icon={faTrashCan} style={{color:"#7F7F7F"}} onClick={HandleDelete}/>
                 </div>
                 <div className='price-container'>
-                    <select onClick={event=>HandleEdit(event)} defaultValue={card.count}>
+                    <select onChange={event=>HandleEdit(event)} defaultValue={card.count}>
                         {quantities.map((item)=><option key={item} value={item}>{item}</option>)}
                     </select>
                     <p>{card.price},00 €</p>

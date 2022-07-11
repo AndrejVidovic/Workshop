@@ -32,7 +32,7 @@
 }
 @media (max-width:600px){
     .checkout-container{
-        width:90%;
+        width:100%;
     }
     .checkout{
         margin-top:0rem;

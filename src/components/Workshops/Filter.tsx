@@ -40,6 +40,7 @@ const CategoryFilter=({itemsToFilter, setFiltersWorkshops})=>{
         }
         else{
             setFiltersCategories(filtersCategories.filter((temp)=>(temp !== category)))
+            
         }
     }  
     const HandleOpenHamburger=()=>{
@@ -60,7 +61,7 @@ const CategoryFilter=({itemsToFilter, setFiltersWorkshops})=>{
             <div className='categories-container-small'>
                 <div className='selected-categories'> 
                     <FontAwesomeIcon icon={faAngleDown} size="lg" onClick={HandleOpenHamburger}></FontAwesomeIcon>
-                    {filtersCategories.map(item=><p key={item}>{item}</p>)}
+                    {filtersCategories.map(item=><p key={item} onClick={e=>HandleChange(item)}>{item}</p>)}
                 </div>
                 {open&&
                     <div>

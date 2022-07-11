@@ -45,11 +45,6 @@ const Workshops=()=>{
     const HandleClick=()=>{
         setCurrentPage(currentPage+1);
     }
-    const setLoadMoreButton=()=>{
-        if(itemsToFilter.length<numberOfWorkshops)
-            return true
-        else return false
-    }
     return(
         <>
         {   itemsToFilter.length==0?<ThreeDots color="#0097CC" height={80} width={80} wrapperStyle={{marginTop:"120px",justifyContent:"center"}} />:

@@ -58,14 +58,14 @@ const Cart=({workshop})=>{
     return(
         <>
         <div className="cart-container">
-            <h4>Studentska Karta</h4>
+            <h4>Kupi svoju kartu</h4>
             <div className='cart-price'>
                 <FontAwesomeIcon icon={faTag} size='2x' style={{color:"#0097CC"}}/>
                 <h3>{workshop.price},00 </h3>
                 <h5>€/karta</h5>
             </div>
             <div className='cart-quantity'>
-                <select onClick={GetQuantity}>
+                <select onChange={GetQuantity}>
                     {quantities.map((item)=><option key={item} value={item}>{item}</option>)}
                 </select>
                 <button onClick={e=>AddToBasket(workshop)}>Dodaj u košaricu</button>
