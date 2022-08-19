@@ -1,17 +1,17 @@
-.back-button-icon{
-    width: fit-content;
-    height: fit-content;
-    padding: 0.6rem 0.7rem;
-    background-color: #F2F2F2;
-    border-radius: 8px;
+.back-button-icon {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.6rem 0.7rem;
+  background-color: #f2f2f2;
+  border-radius: 8px;
 }
-.back-button-p{
-    margin-left: 0.6rem;
+.back-button-p {
+  margin-left: 0.6rem;
 }
-.back-button-a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #7F7F7F;
-    width: fit-content;
+.back-button-a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #7f7f7f;
+  width: fit-content;
 }

@@ -1,9 +1,9 @@
-.footerContainer{
-    width: 100%;
-    background: #F2F2F2;
-    text-align: center;
-    height: 3.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footerContainer {
+  width: 100%;
+  background: #f2f2f2;
+  text-align: center;
+  height: 3.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

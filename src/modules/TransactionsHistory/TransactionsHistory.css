@@ -1,67 +1,64 @@
-.transactions-history-container{
+.transactions-history-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.logo-div {
+  background-color: #ffce25;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.transactions-history-body {
+  margin: 55px 20px 0 50px;
+}
+.transactions-history-body h1 {
+  font-size: 40.5px;
+}
+.logo-div p {
+  color: #7f7f7f;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+.logo-div img {
+  margin-top: 6rem;
+}
+@media (max-width: 599px) {
+  .transactions-history-container {
+    display: contents;
+    grid-template-columns: none;
+  }
+  .logo-div {
+    display: none;
+  }
+  .transactions-history-body {
+    margin: 120px 10px 0 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .transactions-history-body {
+    margin: 40px 20px 0 40px;
+  }
+  .transactions-history-container {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 30% 70%;
+  }
 }
-.logo-div{
-    background-color: #FFCE25;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+@media (min-width: 600px) and (max-width: 767px) {
+  .logo-big {
+    display: none;
+  }
+  .logo-div img {
+    margin-top: 4.5rem;
+  }
+  .transactions-history-body {
+    margin: 55px 20px 0 20px;
+  }
 }
-.transactions-history-body{
-    margin: 55px 20px 0 50px;
+@media (min-width: 768px) {
+  .logo-small {
+    display: none;
+  }
 }
-.transactions-history-body h1{
-    font-size: 40.5px;
-}
-.logo-div p{
-    color: #7F7F7F;
-    font-weight: 500;
-    font-size: 15px;
-    margin-bottom: 2rem;
-}
-.logo-div img{
-    margin-top: 6rem;
-}
-@media (max-width:599px){
-    .transactions-history-container{
-        display: contents;
-        grid-template-columns: none
-    }
-    .logo-div{
-        display: none;
-    }
-    .transactions-history-body{
-        margin:120px 10px 0 10px
-    }
-}
-@media (min-width:768px) and (max-width:992px){
-    .transactions-history-body{
-        margin: 40px 20px 0 40px;
-    }
-    .transactions-history-container{
-        display: grid;
-        grid-template-columns: 30% 70%;
-    }
-}
-@media (min-width:600px) and (max-width:767px){
-    .logo-big{
-        display: none;
-    }
-    .logo-div img{
-        margin-top: 4.5rem;
-    }
-    .transactions-history-body{
-        margin: 55px 20px 0 20px;
-    }
-}
-@media (min-width:768px){
-    .logo-small{
-        display: none;
-    }
-}
-
-
-

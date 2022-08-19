@@ -1,68 +1,68 @@
-.login-form{
-    width: 100%;
+.login-form {
+  width: 100%;
 }
-.checkout-form-input{
-    border: 0;
-    outline: 0;
-    border-bottom: 2px solid #7F7F7F;
-    width: 100%;
-    padding: 0.5rem 0;
-    font-weight: 500;
-    font-size: 17px;
+.checkout-form-input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #7f7f7f;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-size: 17px;
 }
-.checkout-form-label{
-    font-size: 17px;
-    padding-top: 1.2rem;
-    display: flex;
-    align-items: center
+.checkout-form-label {
+  font-size: 17px;
+  padding-top: 1.2rem;
+  display: flex;
+  align-items: center;
 }
-.checkout-form-date-gender{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+.checkout-form-date-gender {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
-.checkout-form-date{
-    width: 45%;
+.checkout-form-date {
+  width: 45%;
 }
-.checkout-form-gender{
-    width: 45%;
+.checkout-form-gender {
+  width: 45%;
 }
-.checkout-button{
-    background-color: #7F7F7F;
-    border: 0;
-    border-radius: 8px;
-    height: 60px;
-    width: 160px;
-    box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);
-    font-family: 'Livvic', sans-serif;
-    font-weight: 700;   
-    font-size: 20px;
-    margin: 3rem 0 2rem 0;
+.checkout-button {
+  background-color: #7f7f7f;
+  border: 0;
+  border-radius: 8px;
+  height: 60px;
+  width: 160px;
+  box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 3rem 0 2rem 0;
 }
-.checkbox-input{
-    width: 25px;
-    height: 25px;
-    background-color:#0097CC;
+.checkbox-input {
+  width: 25px;
+  height: 25px;
+  background-color: #0097cc;
 }
-.checkout-button.active{
-    background-color:#FFCE25;
+.checkout-button.active {
+  background-color: #ffce25;
 }
-.helper-text{
-    display: none;
+.helper-text {
+  display: none;
 }
-.helper-text.active{
-    color:red;
-    margin:0;
-    display: contents;
-    font-size: 12px;
+.helper-text.active {
+  color: red;
+  margin: 0;
+  display: contents;
+  font-size: 12px;
 }
-@media (max-width:600px){
-    .checkout-form-input{
-        padding: 0.2rem 0;
-    }
+@media (max-width: 600px) {
+  .checkout-form-input {
+    padding: 0.2rem 0;
+  }
 }
-@media (min-width:600px) and (max-width:768px){
-    .checkout-form-input{
-        padding: 0.7rem 0;
-    }
+@media (min-width: 600px) and (max-width: 768px) {
+  .checkout-form-input {
+    padding: 0.7rem 0;
+  }
 }

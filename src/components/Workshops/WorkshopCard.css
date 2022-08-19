@@ -1,97 +1,97 @@
-.card-container{
-    width: 24rem;
-    height: auto;
-    background: #FFFFFF;
-    border: 1px solid #F2F2F2;
-    border-radius: 8px;
-    margin: 1.5rem auto;
-    min-height: 500px;
-    box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);
+.card-container {
+  width: 24rem;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  min-height: 500px;
+  box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);
 }
-.card-header{
-    height: 40%;
+.card-header {
+  height: 40%;
 }
-.workshop-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
+.workshop-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
-.card-body{
-    width: 80%;
-    margin: auto;
-    position: relative;
+.card-body {
+  width: 80%;
+  margin: auto;
+  position: relative;
 }
-.card-workshop-time{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
+.card-workshop-time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
 }
-.card-workshop-title{
-    color: #0097CC;
-    font-size: 1.7rem;
-    margin-top: 0.5rem;
-    height: 4.6rem;
-    line-height: 2.3rem;
-    overflow: hidden;
+.card-workshop-title {
+  color: #0097cc;
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+  height: 4.6rem;
+  line-height: 2.3rem;
+  overflow: hidden;
 }
-.card-workshop-title:hover{
-    overflow: visible;
+.card-workshop-title:hover {
+  overflow: visible;
 }
-.card-workshop-price{
-    font-size: 25px;
-    margin-top: 0;
+.card-workshop-price {
+  font-size: 25px;
+  margin-top: 0;
 }
-.workshop-buy-button{
-    background: #FFC80C;
-    box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);
-    border-radius: 8px;
-    border: 0;
-    width: 100%;
-    height: 3.1rem;
-    font-family: 'Livvic', sans-serif;
-    font-weight: 700;   
-    font-size: 20px;
-    margin-bottom: 2rem;
+.workshop-buy-button {
+  background: #ffc80c;
+  box-shadow: 1px 2px 8px rgba(127, 127, 127, 0.25);
+  border-radius: 8px;
+  border: 0;
+  width: 100%;
+  height: 3.1rem;
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 2rem;
 }
-.card-icon{
-    margin-right: 0.4rem;
+.card-icon {
+  margin-right: 0.4rem;
 }
-.card-date{
-    margin-right: 1rem;
+.card-date {
+  margin-right: 1rem;
 }
-.card-workshop-icon-div{
-    position: absolute;
-    top: -25px;
-    right: -15px;
-    padding: 0.7rem;
-    width: fit-content;
-    height: fit-content;
-    background-color: #0097CC;
-    border-radius: 8px;
+.card-workshop-icon-div {
+  position: absolute;
+  top: -25px;
+  right: -15px;
+  padding: 0.7rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: #0097cc;
+  border-radius: 8px;
 }
-@media  (min-width:992px) and (max-width:1200px){
-    .card-container{
-        width: 20rem;
-    }
-    .category-icon{
-        top: -19px;
-    }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .card-container {
+    width: 20rem;
+  }
+  .category-icon {
+    top: -19px;
+  }
 }
-@media (min-width:768px) and (max-width:992px){
-    .category-icon{
-        top: -18px;
-    }
-    .card-container{
-        width: 19rem;
-    }
+@media (min-width: 768px) and (max-width: 992px) {
+  .category-icon {
+    top: -18px;
+  }
+  .card-container {
+    width: 19rem;
+  }
 }
-@media(max-width:768px){
-    .category-icon{
-        top: -18px;
-    }
-    .card-container{
-        width: 18rem;
-    }
+@media (max-width: 768px) {
+  .category-icon {
+    top: -18px;
+  }
+  .card-container {
+    width: 18rem;
+  }
 }

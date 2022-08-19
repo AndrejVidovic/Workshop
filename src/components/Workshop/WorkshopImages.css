@@ -1,14 +1,14 @@
-.workshop-header-image{
-    height:25rem;
+.workshop-header-image {
+  height: 25rem;
 }
-.workshop-header-image img{
-    width:100%;
-    height:100%;
-    object-fit:fill;
-    border-radius: 8px;
+.workshop-header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 8px;
 }
-@media (max-width:600px){
-    .workshop-header-image{
-        height:15rem
-    }
+@media (max-width: 600px) {
+  .workshop-header-image {
+    height: 15rem;
+  }
 }
