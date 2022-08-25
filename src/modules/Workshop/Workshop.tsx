@@ -7,11 +7,7 @@ import WorkshopInfo from "../../components/Workshop/WorkshopInfo";
 import Cart from "../../components/Workshop/Cart";
 import { ThreeDots } from "react-loader-spinner";
 import BackButton from "../BackButton/BackButton";
-
-const fetchOptions = {
-  method: "GET",
-  headers: { "Content-Type": "application/json" },
-};
+import { fetchData } from "../../service/Fetch";
 
 const Workshop = () => {
   let workshopId = useParams();
@@ -27,20 +23,14 @@ const Workshop = () => {
   });
   const [recomended, setRecomended] = useState([]);
   useEffect(() => {
-    const getData = async () => {
-      const res = await fetch(`https://locastic-server.herokuapp.com/workshops/${workshopId.id}`, fetchOptions);
-      const data = await res.json();
-      setWorkshop(data);
-    };
-    getData();
+    fetchData(`https://locastic-server.herokuapp.com/workshops/${workshopId.id}`).then((response) => {
+      setWorkshop(response);
+    });
   }, [workshopId]);
   useEffect(() => {
-    const getRecomended = async () => {
-      const res = await fetch(`https://locastic-server.herokuapp.com/workshops?&_limit=3&_sort=date&_order=desc&title_ne=${workshop.title}&category=${workshop.category}`, fetchOptions);
-      const data = await res.json();
-      setRecomended(data);
-    };
-    getRecomended();
+    fetchData(`https://locastic-server.herokuapp.com/workshops?&_limit=3&_sort=date&_order=desc&title_ne=${workshop.title}&category=${workshop.category}`).then((response) => {
+      setRecomended(response);
+    });
   }, [workshop]);
   return (
     <>

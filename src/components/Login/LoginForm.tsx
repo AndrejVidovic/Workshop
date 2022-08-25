@@ -5,14 +5,11 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { user_logged_in } from "../../redux/Slices/login";
 import { useAppDispatch } from "../../redux/hooks";
 import { useNavigate } from "react-router";
+import { fetchData } from "../../service/Fetch";
 
 type InitialValues = {
   email: string;
   password: string;
-};
-const fetchOptions = {
-  method: "GET",
-  headers: { "Content-Type": "application/json" },
 };
 
 const LoginForm = () => {
@@ -48,19 +45,19 @@ const LoginForm = () => {
         break;
     }
   }
+  let loggedUser;
   const CheckLogin = async (e) => {
     e.preventDefault();
-    const res = await fetch(`https://locastic-server.herokuapp.com/users/?email=${user.email}&password=${user.password}`, fetchOptions);
-    const data = await res.json();
-    const loggedUser = data[0];
-    if (data.length !== 1) {
+    await fetchData(`https://locastic-server.herokuapp.com/users/?email=${user.email}&password=${user.password}`).then((response) => {
+      loggedUser = response[0];
+    });
+    if (loggedUser === undefined) {
       setError("Entered login credentials are not valid! Please try again.");
     } else {
       dispatch(user_logged_in(loggedUser.name));
       navigate("/workshops");
     }
   };
-
   return (
     <div className="login-form-container">
       <h2 className="title">Prijavi se</h2>

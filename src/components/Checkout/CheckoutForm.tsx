@@ -3,6 +3,7 @@ import SuccessModal from "../../modules/SuccessModal/SuccessModal";
 import Validation from "./Validation";
 import "./CheckoutForm.css";
 import { useAppSelector } from "../../redux/hooks";
+import { postData } from "../../service/Fetch";
 const genders = ["Other", "Female", "Male"];
 const InitalValues = {
   name: "",
@@ -57,15 +58,7 @@ const CheckoutForm = ({ setOpenCheckout }) => {
     event.preventDefault();
     if (Validation(user, setErrors, InitalValuesErrors) && active) {
       event.preventDefault();
-      fetch("https://locastic-server.herokuapp.com/orders", {
-        method: "POST",
-        body: JSON.stringify(object),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      })
-        .then((response) => response.json())
-        .then((json) => console.log(json));
+      postData("https://locastic-server.herokuapp.com/orders", object);
       setOpenSuccessModal(true);
     }
   };

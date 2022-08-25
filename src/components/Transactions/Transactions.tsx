@@ -3,19 +3,13 @@ import dateformat from "dateformat";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "./Transactions.css";
-const fetchOptions = {
-  method: "GET",
-  headers: { "Content-Type": "application/json" },
-};
+import { fetchData } from "../../service/Fetch";
 const Transactions = () => {
   const [transactions, setTransactions] = useState([]);
   useEffect(() => {
-    const getData = async () => {
-      const res = await fetch(`https://locastic-server.herokuapp.com/orders`, fetchOptions);
-      const data = await res.json();
-      setTransactions(data);
-    };
-    getData();
+    fetchData(`https://locastic-server.herokuapp.com/orders`).then(response=>{
+      setTransactions(response)
+    })
   }, []);
   const getDate = (data) => {
     let date = dateformat(data.date, "dd.mm.yyyy.");

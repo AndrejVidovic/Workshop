@@ -3,22 +3,15 @@ import dateformat from "dateformat";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays, faClock, faPaintBrush, faBolt, faCode, faDisplay, faIcons } from "@fortawesome/free-solid-svg-icons";
 import "./WorkshopInfo.css";
-
-const fetchOptions = {
-  method: "GET",
-  headers: { "Content-Type": "application/json" },
-};
+import { fetchData } from "../../service/Fetch";
 const WorkshopInfo = ({ workshop }) => {
   let date = dateformat(workshop.date, "ddd dd.mm.yyyy.");
   let time = dateformat(workshop.date, "HH:MM");
   const [moderator, setModerator] = useState("");
   useEffect(() => {
-    const getData = async () => {
-      const res = await fetch(`https://locastic-server.herokuapp.com/users/${workshop.userId}`, fetchOptions);
-      const data = await res.json();
-      setModerator(data.name);
-    };
-    getData();
+    fetchData(`https://locastic-server.herokuapp.com/users/${workshop.userId}`).then((response) => {
+      setModerator(response.name);
+    });
   }, [workshop]);
   const getCategoryIcon = () => {
     switch (workshop.category) {

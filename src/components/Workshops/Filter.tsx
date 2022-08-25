@@ -46,7 +46,6 @@ const CategoryFilter = ({ itemsToFilter, setFiltersWorkshops }) => {
   return (
     <>
       <p className="theme-title">Filtriraj po temi</p>
-      <p className="theme-subtitle">Sve teme</p>
       <div className="categories-container">
         {categories.map((category, index) => (
           <div className={`category ${filtersCategories.includes(category) ? "active" : null}`} key={index} onClick={(e) => HandleChange(category)}>

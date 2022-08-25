@@ -10,6 +10,7 @@
   align-items: center;
   font-size: 17px;
   width: fit-content;
+  cursor: pointer;
 }
 .category.active {
   color: #0097cc;
