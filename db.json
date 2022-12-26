@@ -19,59 +19,12 @@
       "id": 3
     },
     {
-      "email": "narakasbergen@test.com",
-      "name": "Nara Kasbergen",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
+      "email": "test123@test.com",
+      "name": "John Doe",
+      "password": "test",
       "id": 4
     },
-    {
-      "email": "srdjanvranac@test.com",
-      "name": "Srdjan Vranac",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
-      "id": 5
-    },
-    {
-      "email": "calevans@test.com",
-      "name": "Cal Evans",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
-      "id": 6
-    },
-    {
-      "email": "keneudeze@test.com",
-      "name": "Kene Udeze",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
-      "id": 7
-    },
-    {
-      "email": "pimelshoff@test.com",
-      "name": "Pim Elshoff",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
-      "id": 8
-    },
-    {
-      "email": "johndoe@test.com",
-      "name": "John Doe",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
-      "id": 9
-    },
-    {
-      "email": "saravieira@test.com",
-      "name": "Sara Vieira",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
-      "id": 10
-    },
-    {
-      "email": "michieldewit@test.com",
-      "name": "Michiel de Wit",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
-      "id": 11
-    },
-    {
-      "email": "harryroberts@test.com",
-      "name": "Harry Roberts",
-      "password": "$2a$10$2couoCxDodoecXmLAtdGsOfaDV4KTl1nf5x3L7rhoa7SeBY4zkVpq",
-      "id": 12
-    }
+    
   ],
   "workshops": [
     {
@@ -101,7 +54,7 @@
       "category": "frontend",
       "date": "2020-07-02T22:00:00.000Z",
       "imageUrl": "https://secure.meetupstatic.com/photos/event/2/d/8/e/highres_482651662.jpeg",
-      "userId": 4,
+      "userId": 3,
       "id": 3
     },
     {
@@ -121,7 +74,7 @@
       "price": 500,
       "date": "2020-02-21T13:51:50.417-07:00",
       "category": "backend",
-      "userId": 5,
+      "userId": 2,
       "imageUrl": "https://secure.meetupstatic.com/photos/event/2/d/8/e/highres_482651662.jpeg"
     },
     {
@@ -131,7 +84,7 @@
       "price": 500,
       "date": "2020-04-27T13:51:50.417-07:00",
       "category": "backend",
-      "userId": 6,
+      "userId": 1,
       "imageUrl": "https://secure.meetupstatic.com/photos/event/2/d/8/e/highres_482651662.jpeg"
     },
     {
@@ -141,7 +94,7 @@
       "price": 650,
       "date": "2020-05-23T13:51:50.417-07:00",
       "category": "design",
-      "userId": 7,
+      "userId": 2,
       "imageUrl": "https://secure.meetupstatic.com/photos/event/2/d/8/e/highres_482651662.jpeg"
     },
     {
@@ -151,7 +104,7 @@
       "price": 350,
       "date": "2020-06-23T13:51:50.417-07:00",
       "category": "frontend",
-      "userId": 8,
+      "userId": 3,
       "imageUrl": "https://rep.hr/media/cache/fe_homepage_profile/images/upload/87/tinel26.png"
     },
     {
@@ -161,7 +114,7 @@
       "price": 450,
       "date": "2020-07-23T13:51:50.417-07:00",
       "category": "frontend",
-      "userId": 9,
+      "userId": 1,
       "imageUrl": "https://secure.meetupstatic.com/photos/event/2/d/8/e/highres_482651662.jpeg"
     },
     {
@@ -173,26 +126,6 @@
       "category": "frontend",
       "userId": 10,
       "imageUrl": "https://secure.meetupstatic.com/photos/event/5/4/c/f/600_477021711.jpeg"
-    },
-    {
-      "id": 11,
-      "title": "Grey hairs in IT",
-      "desc": "How do older developers fit in with the younger generation? Will they be able to continue developing software until their pension? What are the prospects for older developers? Do they have to start looking out for a job outside the field? Or can they put their grey hairs to their (and the team's) advantage? We’ve got Michiel de Wit to answer all of those questions in a single talk. He will show examples of older developers on what they actually did, and how they managed to stay relevant. He will question the traditional Developer – Team lead – Project leader career path and show how Agile actually opens up a whole new set of possibilities.",
-      "price": 450,
-      "date": "2020-02-23T13:51:50.417-07:00",
-      "category": "marketing",
-      "userId": 11,
-      "imageUrl": "https://secure.meetupstatic.com/photos/event/7/d/5/b/600_479192091.jpeg"
-    },
-    {
-      "id": 12,
-      "title": "Web Performance Optimization",
-      "desc": "At the upcoming Tinel on Thursday, our guest will host a LIVE Web Performance Optimization session. We will move away from the classic presentation format as Harry will be doing live coding on the spot, helping you to enhance the website speed. You can expect a lot of tips and tricks from one of the best industry experts who worked for Google, UN, Etsy, BBC, and more. The event is taking place on the 30th of May, we strongly suggest that you confirm your place as soon as possible - you’re in for a treat!",
-      "price": 450,
-      "date": "2020-05-30T13:51:50.417-07:00",
-      "category": "marketing",
-      "userId": 12,
-      "imageUrl": "https://secure.meetupstatic.com/photos/event/2/d/8/e/highres_482651662.jpeg"
     }
   ],
   "orders": [
@@ -216,34 +149,6 @@
       "total": 825,
       "date": "2022-07-01T19:59:19.547Z",
       "id": 1
-    },
-    {
-      "products": [
-        {
-          "id": 8,
-          "title": "From conversation to software",
-          "image": "https://rep.hr/media/cache/fe_homepage_profile/images/upload/87/tinel26.png",
-          "count": 1,
-          "price": 350
-        }
-      ],
-      "total": 350,
-      "date": "2022-07-01T20:19:09.524Z",
-      "id": 2
-    },
-    {
-      "products": [
-        {
-          "id": 3,
-          "title": "Voice - The new Frontend",
-          "image": "https://secure.meetupstatic.com/photos/event/2/d/8/e/highres_482651662.jpeg",
-          "count": 1,
-          "price": 375
-        }
-      ],
-      "total": 375,
-      "date": "2022-07-02T16:16:54.868Z",
-      "id": 3
     }
   ],
   "categories": [
