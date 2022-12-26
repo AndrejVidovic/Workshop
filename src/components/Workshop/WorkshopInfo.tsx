@@ -9,7 +9,7 @@ const WorkshopInfo = ({ workshop }) => {
   let time = dateformat(workshop.date, "HH:MM");
   const [moderator, setModerator] = useState("");
   useEffect(() => {
-    fetchData(`https://locastic-server.herokuapp.com/users/${workshop.userId}`).then((response) => {
+    fetchData(`https://server-workshop.vercel.app/users/${workshop.userId}`).then((response) => {
       setModerator(response.name);
     });
   }, [workshop]);

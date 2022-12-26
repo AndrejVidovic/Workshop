@@ -23,12 +23,12 @@ const Workshop = () => {
   });
   const [recomended, setRecomended] = useState([]);
   useEffect(() => {
-    fetchData(`https://locastic-server.herokuapp.com/workshops/${workshopId.id}`).then((response) => {
+    fetchData(`https://server-workshop.vercel.app/workshops/${workshopId.id}`).then((response) => {
       setWorkshop(response);
     });
   }, [workshopId]);
   useEffect(() => {
-    fetchData(`https://locastic-server.herokuapp.com/workshops?&_limit=3&_sort=date&_order=desc&title_ne=${workshop.title}&category=${workshop.category}`).then((response) => {
+    fetchData(`https://server-workshop.vercel.app/workshops?&_limit=3&_sort=date&_order=desc&title_ne=${workshop.title}&category=${workshop.category}`).then((response) => {
       setRecomended(response);
     });
   }, [workshop]);

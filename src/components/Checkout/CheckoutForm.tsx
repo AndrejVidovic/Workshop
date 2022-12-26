@@ -58,7 +58,7 @@ const CheckoutForm = ({ setOpenCheckout }) => {
     event.preventDefault();
     if (Validation(user, setErrors, InitalValuesErrors) && active) {
       event.preventDefault();
-      postData("https://locastic-server.herokuapp.com/orders", object);
+      //postData("https://server-workshop.vercel.app/orders", object);
       setOpenSuccessModal(true);
     }
   };

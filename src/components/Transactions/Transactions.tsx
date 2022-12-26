@@ -7,7 +7,7 @@ import { fetchData } from "../../service/Fetch";
 const Transactions = () => {
   const [transactions, setTransactions] = useState([]);
   useEffect(() => {
-    fetchData(`https://locastic-server.herokuapp.com/orders`).then(response=>{
+    fetchData(`https://server-workshop.vercel.app/orders`).then(response=>{
       setTransactions(response)
     })
   }, []);

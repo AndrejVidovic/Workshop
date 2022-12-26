@@ -20,7 +20,7 @@ const Workshops = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch(`https://locastic-server.herokuapp.com/workshops?&_limit=${pageLimit * currentPage}&_sort=date&_order=desc`, fetchOptions);
+      const res = await fetch(`https://server-workshop.vercel.app/workshops?&_limit=${pageLimit * currentPage}&_sort=date&_order=desc`, fetchOptions);
       const data = await res.json();
       setNumberOfWorkshop(parseInt(res.headers.get("X-Total-Count")));
       setItemsToFilter(data);

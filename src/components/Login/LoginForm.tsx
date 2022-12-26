@@ -48,7 +48,7 @@ const LoginForm = () => {
   let loggedUser;
   const CheckLogin = async (e) => {
     e.preventDefault();
-    await fetchData(`https://locastic-server.herokuapp.com/users/?email=${user.email}&password=${user.password}`).then((response) => {
+    await fetchData(`https://server-workshop.vercel.app/users/?email=${user.email}&password=${user.password}`).then((response) => {
       loggedUser = response[0];
     });
     if (loggedUser === undefined) {
